@@ -1,36 +1,164 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import logo from '../images/halfpastmoon-teal-bg-1.png';
+import moons from '../images/moons.png';
+import profile from '../images/profile.png';
+import display from '../images/display.png';
+import fan from '../images/fan.png';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Reviews">
 	<main>
-		<h1><span class="text-gradient">Halfpastmoon</span></h1>
+        <img src={logo} width="200">
+        <h1><span class="text-gradient">half past moon,</span><br />
+        a cosy nook in the universe</h1>
+        <br /><br />
+        <center>
+            <img src={moons} width="885">
+        </center>
+        <br />
+        
+        <center>
+            <span class="caption">
+                <i>even in a crowded room, the light within you glows – embers that bask gloriously 
+                in the moonlight and endure <br />even in the darkest of storms
+                </i>
+            </span>
+            <br /><br />
+            
+                <i>the star seeker tarot is designed by nicky ferrada (@thevanmystic)
+                <br /> and purchased at love.magic.sparkles (@love.magic.sparkles)</i>
+        </center>
+        
+        <br /><br />
+		<h1><span class="text-gradient">the beginning</span></h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			<strong>half past moon</strong> started out as one girl's quest to find solace 
+            in her journey through life, before it blossomed into a way she could empower 
+            her loved ones to see their own beautiful light.
+            <br /><br />
+		<!-- </p>
+        <p class="instructions"> -->
+			The truth is, <strong>tarot card reading</strong> has little to do with 
+            fortune telling and more of a means to discover oneself, whether it be
+            affirming strengths or re-writing narratives that may no longer be serving
+            you.
+            <br /><br />
+		<!-- </p>
+        <p class="instructions"> -->
+			More often than not, the answers that we longingly search for are already 
+            within us. <br /><br />
+            A reading merely helps to cast a light on this and suggest certain 
+            pathways you may take to reach your desired destination.<br /><br />
+		<!-- </p>
+        <p class="instructions"> -->
+			While I believe that <strong>the universe has a way</strong> (albeit sometimes 
+            strange and unexpected) of protecting us, we ultimately make our own choices and pave 
+            our own destinies and I would be honoured to be a tiny part of realising yours.
 		</p>
+        <br />
+        <h1><span class="text-gradient">about readings</span></h1>
+		<p class="instructions">
+			Tarot card readings (irl or virtual) at half past moon typically take about 
+            <strong>15-20 minutes.</strong><br /><br />
+        <!-- </p>
+        <p class="instructions"> -->
+            Bring yourself – as you are – with an open mind and a particular 
+            theme or question on which you hope to seek greater clarity.<br /><br />
+            
+            This could be on self-love, relationships, and career paths or slightly more 
+            specific questions around how to take steps towards a more positive environment.<br /><br />
+
+            During the reading, and after you’ve selected your cards, I’ll walk you through 
+            what each of them means and how they can possibly be interpreted in relation 
+            to the given situation.
+            <br /><br />
+
+            While readings are structured to give insight into past, current, and future 
+            events, they are ultimately <strong>tools for introspection.</strong><br /><br />
+            
+            <strong>Like moonlight peeking through the trees of the great forest, they illuminate 
+            possible courses of action</strong> that you can consider taking in your journey ahead. 
+		</p>
+        <div class="img-column">
+            <img src={display} width="440">
+            <img src={fan} width="440">
+        </div>
+        <br /><br />
+        <h1><span class="text-gradient">getting started</span></h1>
+        <p class="instructions">
+            DM me on Instagram (<a href="https://instagram.com/xiuwennnnnn">@xiuwennnnnn</a>) 
+            with your preference (virtual/irl) & contact deets and i’ll be in touch with sorting 
+            out the rest. half past moon works on a “pay what you want” system, but always 
+            appreciates feedback and reviews (:
+        </p>
+        <center>
+            <img src={profile} width="880">
+        </center>
+        <br /><br />
+        <h1><span class="text-gradient">reviews</span></h1>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="#"
+				title="LY"
+				body={`i can really see how tarot card sessions with half past moon can be used
+                not just for the major events in life, but even the more minor things that happen
+                on a day-to-day basis`}
 			/>
 			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+                href="#"
+				title="V"
+				body={`i thought the session was so exciting and informative… really helped put 
+                a lot of thoughts and ideas i had in my head into perspective`}
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+                href="#"
+				title="K"
+				body={`the reading pointed out dilemmas i was facing and provided valuable insights 
+                into how i might go about approaching the considerations i had in mind. the session 
+                left me feeling more aware and empowered`}
 			/>
 			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+                href="#"
+				title="KF"
+				body={`the session left me more aware of the other perspectives that might be at play 
+                for my situation and I thought that was really helpful`}
 			/>
+            <Card
+                href="#"
+				title="I"
+				body={`so impressive how half past moon went in-depth in explaining and linking the 
+                cards together. will recommend my friends to try it out`}
+			/>
+			<Card
+                href="#"
+				title="E"
+				body={`the reading gave me a good perspective of what i should be looking out for, 
+                with good amount of details of my current situation and what to expect/work on in the future`}
+			/>
+            <Card
+                href="#"
+				title="B"
+				body={`it was very informative and half past moon definitely gave me the insight and 
+                confidence for what is to come in my near future`}
+			/>
+			<Card
+                href="#"
+				title="J"
+				body={`the tarot reading session was a great experience. half past moon really went deep into 
+                explaining everything in detail and answered all 1001 questions i had`}
+			/>
+            <Card
+                href="#"
+				title="YJ"
+				body={`it was so comforting to have my cards read by half past moon. she makes the effort 
+                to check-in with you halfway through the reading to clear any doubts. truly genuine girl 
+                who is doing this out of best interest for anyone out there`}
+			/>
+
+
+
 		</ul>
 	</main>
 </Layout>
@@ -39,8 +167,13 @@ import Card from '../components/Card.astro';
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 60ch;
+		max-width: 90ch;
 	}
+    .caption {
+        font-size: 2rem;
+        font-weight: 200;
+        margin: 1rem 0;
+    }
 	h1 {
 		font-size: 3rem;
 		font-weight: 800;
@@ -57,7 +190,7 @@ import Card from '../components/Card.astro';
 		line-height: 1.6;
 		margin: 1rem 0;
 		border: 1px solid rgba(var(--accent), 25%);
-		background-color: pink;
+		background-color: white;
 		padding: 1rem;
 		border-radius: 0.4rem;
 	}
@@ -78,4 +211,9 @@ import Card from '../components/Card.astro';
 		gap: 1rem;
 		padding: 0;
 	}
+    .img-column {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 </style>
