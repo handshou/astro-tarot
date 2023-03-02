@@ -9,14 +9,14 @@ const { href, title, body } = Astro.props;
 ---
 
 <li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
+	<a href={}>
 		<p>
-			{body}
+			&ldquo; {body} &rdquo;
 		</p>
+		<h2>
+			<span>&rdca; {title}</span>
+			
+		</h2>
 	</a>
 </li>
 <style>
@@ -34,7 +34,9 @@ const { href, title, body } = Astro.props;
 	}
 
 	.link-card > a {
-		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		text-decoration: none;
 		line-height: 1.4;
 		padding: 1rem 1.3rem;
@@ -59,5 +61,8 @@ const { href, title, body } = Astro.props;
 	}
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent));
+	}
+	span {
+		float: right;
 	}
 </style>
