@@ -8,14 +8,14 @@ import display from '../images/display.png';
 import fan from '../images/fan.png';
 ---
 
-<Layout title="Reviews">
+<Layout title="half past moon">
 	<main>
         <img src={logo} width="200">
         <h1><span class="text-gradient">half past moon,</span><br />
         a cosy nook in the universe</h1>
         <br /><br />
         <center>
-            <img src={moons} width="885">
+            <img src={moons}>
         </center>
         <br />
         
@@ -82,8 +82,8 @@ import fan from '../images/fan.png';
             possible courses of action</strong> that you can consider taking in your journey ahead. 
 		</p>
         <div class="img-column">
-            <img src={display} width="440">
-            <img src={fan} width="440">
+            <img src={display}>
+            <img src={fan}>
         </div>
         <br /><br />
         <h1><span class="text-gradient">getting started</span></h1>
@@ -94,7 +94,7 @@ import fan from '../images/fan.png';
             appreciates feedback and reviews (:
         </p>
         <center>
-            <img src={profile} width="880">
+            <img src={profile}>
         </center>
         <br /><br />
         <h1><span class="text-gradient">reviews</span></h1>
@@ -164,6 +164,10 @@ import fan from '../images/fan.png';
 </Layout>
 
 <style>
+    img {
+        max-width: 100%; 
+        height:auto;
+    }
 	main {
 		margin: auto;
 		padding: 1.5rem;
@@ -213,6 +217,8 @@ import fan from '../images/fan.png';
 	}
     .img-column {
         display: flex;
+        max-width: 50%; 
+        height:auto;
         flex-direction: row;
         justify-content: space-between;
     }
